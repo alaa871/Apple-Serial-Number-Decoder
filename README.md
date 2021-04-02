@@ -12,7 +12,7 @@ Remember to chmod the permission for database.json if required. Otherwise serial
 
 __Versions:__
 ```
-serialinfo.php     - optimized for php8 and includes debug messaging
+serialinfo.php     - optimized for php8 and includes debug messaging. Should also work for php7.
 serialinfo_old.php - if newer version doesn't work, rename this one to serialinfo.php and try. 
 ```
 
