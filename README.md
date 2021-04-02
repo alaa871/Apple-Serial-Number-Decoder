@@ -7,5 +7,14 @@ Place the 3 files on your webserver. Visit index.html. Or copy the `<form> ... <
 __Database:__
 The database.json file is self updating. So when you search a serial number, it first scans the database for the hwc code (last 3#'s if 11 digit or 4#'s if 12 digit serial) to see if the information exists in the database. If it doesn't, then it uses apple's api to look up the hwc and then appends that info to the json database.
 
+__Permissions:__
+Remember to chmod the permission for database.json if required. Otherwise serialphp.info will not have the correct permissions to write to the file.
+
+__Versions:__
+```
+serialinfo.php     - optimized for php8 and includes debug messaging
+serialinfo_old.php - if newer version doesn't work, rename this one to serialinfo.php and try. 
+```
+
 __TODO:__
 This decoder currently displays a break down of the serial number components (for serials up to 2019), displays model information, manufacture information and links to apple's official hardware configurations. Sites like everymac.com or appleserialinfo.com expand on the information provided by this script greatly with model and emc #'s, configuration options, specs etc. It would be nice if someone forked this and expanded upon the json database file to incorporate these additional fields and supply the community with a free database alternative opposed to subscription based decoding options!
