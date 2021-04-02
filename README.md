@@ -8,7 +8,7 @@ __Database:__
 The database.json file is self updating. So when you search a serial number, it first scans the database for the hwc code (last 3#'s if 11 digit or 4#'s if 12 digit serial) to see if the information exists in the database. If it doesn't, then it uses apple's api to look up the hwc and then appends that info to the json database.
 
 __Permissions:__
-Remember to chmod the permission for database.json if required. Otherwise serialphp.info will not have the correct permissions to write to the file.
+Remember to chmod the permissions for database.json if required. Otherwise serialphp.info will not have the correct permissions to write to the file.
 
 __Versions:__
 ```
